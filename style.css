@@ -1,0 +1,83 @@
+html {
+    font-family: 'Karla', sans-serif;
+    background-color: hsl(204, 43%, 93%);
+    box-sizing: border-box;
+    width: 1440px;
+    height: 900px;
+}
+.container {
+
+    border-radius: 10px;
+    width: 50vw;
+    height: 50vh;
+    margin: 20px;
+    color: hsl(218, 22%, 67%);
+    background-color: white;
+    position: relative;
+    padding: 20px;
+    left: 20%;
+}
+#box-up > h3 {
+    font-weight: 700;
+    color: hsl(179, 62%, 43%);
+}
+#box-up > h4 {
+    color: hsl(71,73%,54%);
+}
+
+#box-left, #box-right {
+    color:white;
+    display: inline-block;
+    width: 50%;
+    height: 55%;
+    position: absolute;
+    bottom: 0;
+}
+#box-left{
+    background-color: hsl(179, 55%, 43%);
+    border-color: hsl(179, 55%, 43%);
+    right: 50%;
+    border-bottom-left-radius: 10px;
+
+}
+.box-left-content{
+    padding-left: 40px;
+}
+#box-left > h5 {
+    font-size: 1.2em;
+    line-height: 0;
+}
+#box-right {
+    background-color: hsl(179, 72%, 43%);
+    border-color:  hsl(179, 72%, 43%);
+    left: 50%;
+    border-bottom-right-radius: 10px;
+    
+}
+#box-right > p {
+    font-size: 0.8rem;
+    line-height: 0.7em;
+}
+#box-right > h5, #price {
+    font-weight: 700;
+    font-size: 1.2em;
+}
+#box-right > p, #box-right > h5 {
+    padding-left: 30px;
+}
+button {
+    border: 1px solid hsl(71, 73%, 54%);
+    border-radius: 5px;
+    width: 60%;
+    height: 5vh;
+    background-color: hsl(71, 73%, 54%);
+    color:inherit;
+    box-shadow: 1px 2px 1px 1px rgba(0, 0, 0, 0.2);
+}
+button:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+.sub {
+    display: inline;
+}
