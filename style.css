@@ -8,8 +8,8 @@ html {
 .container {
 
     border-radius: 10px;
-    width: 50vw;
-    height: 50vh;
+    width: 40%;
+    height: fit-content;
     margin: 20px;
     color: hsl(218, 22%, 67%);
     background-color: white;
@@ -25,7 +25,7 @@ html {
     color: hsl(71,73%,54%);
 }
 
-#box-left, #box-right {
+#box-left, #box-right{
     color:white;
     display: inline-block;
     width: 50%;
@@ -43,41 +43,54 @@ html {
 .box-left-content{
     padding-left: 40px;
 }
-#box-left > h5 {
+/* #box-left > h5 {
     font-size: 1.2em;
     line-height: 0;
-}
+} */
 #box-right {
     background-color: hsl(179, 72%, 43%);
     border-color:  hsl(179, 72%, 43%);
     left: 50%;
     border-bottom-right-radius: 10px;
-    
 }
 #box-right > p {
     font-size: 0.8rem;
     line-height: 0.7em;
+    opacity: 0.5;
 }
 #box-right > h5, #price {
     font-weight: 700;
     font-size: 1.2em;
+    opacity: 1;
 }
 #box-right > p, #box-right > h5 {
     padding-left: 30px;
+    position:relative;
+    bottom:10%;
 }
 button {
     border: 1px solid hsl(71, 73%, 54%);
     border-radius: 5px;
-    width: 60%;
-    height: 5vh;
+    width: 80%;
+    height: 2.5rem;
     background-color: hsl(71, 73%, 54%);
     color:inherit;
     box-shadow: 1px 2px 1px 1px rgba(0, 0, 0, 0.2);
+    position: relative;
+    left: 3%;
 }
 button:hover {
     opacity: 0.8;
     cursor: pointer;
 }
-.sub {
-    display: inline;
+
+#box-up {
+    position:relative;
+    display: inline-block;
+    z-index: 1;
+    margin-bottom: 200px;
+}
+#month {
+    opacity: 0.5;
+    padding-left: 5%;
 }
