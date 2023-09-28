@@ -85,8 +85,8 @@ h5, h4, h3, p {
     padding-bottom: 15px;
 }
 button {
-    width: 100%;
-    height: 25%;
+    width: 220px;
+    height: 35px;
     background-color:rgb(192, 223, 52);
     color:rgb(229, 239, 245);
     box-shadow: 1px 1px 10px 0px rgba(66, 68, 90, 1);
@@ -99,4 +99,13 @@ button {
 button:hover {
     opacity: 0.8;
     cursor: pointer;
+}
+@media (max-width: 650px){
+    html {
+        margin: 70px
+    }
+    #box-right, #box-left, .container {
+        width:100%;
+        height: auto;
+    }
 }
