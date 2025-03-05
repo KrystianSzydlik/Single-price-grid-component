@@ -14,9 +14,7 @@
   --border-radius: 10px;
   --box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   --padding-section: 40px;
-}
 
-html {
   font-family: var(--font-family);
   font-weight: var(--font-weight-regular);
   font-size: var(--font-size-base);
@@ -27,7 +25,6 @@ html {
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
   margin: 0;
   padding: 0;
 }
@@ -43,11 +40,10 @@ body {
 .price-grid {
   max-width: 700px;
   border-radius: var(--border-radius);
-  overflow: hidden;
   box-shadow: var(--box-shadow);
 }
 
-.price-grid__header {
+.price-grid__intro {
   background-color: var(--white);
   padding: var(--padding-section);
 }
@@ -119,12 +115,12 @@ body {
   font-weight: var(--font-weight-bold);
   font-family: var(--font-family);
   cursor: pointer;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--box-shadow);
   transition: background-color 0.3s;
 }
 
 .price-grid__button:hover {
-  background-color: hsl(71, 73%, 48%);
+  background-color: var(--yellow);
 }
 
 .price-grid__list {
